@@ -12,4 +12,17 @@
     color: #212121;
     line-height: 1.5;
   }
-  
+  /* task 2 */
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .itemTask2{
+    width: calc((100% - 20px * 2) / 3)
+  }
+  .itemTask2-img{
+    width: 100%;
+    height: auto;
+  }
