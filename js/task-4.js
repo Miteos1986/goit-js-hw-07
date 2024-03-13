@@ -1,4 +1,5 @@
 const form = document.querySelector(".login-form");
+const btn = document.querySelector("button")
 
 form.addEventListener("submit", handleSubmit);
 
@@ -16,3 +17,8 @@ function handleSubmit(event){
 
     event.target.reset();
 }
+form.style.display = "block";
+btn.style.backgroundColor = "#4E75FF"; 
+btn.style.color = "#fff";
+btn.style.borderRadius = "8px";
+btn.style.padding = "8px", "16px";

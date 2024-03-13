@@ -1,10 +1,11 @@
 // 2:26:50
 const btn = document.querySelector(".change-color");
-const color = document.querySelector(".color")
+const color = document.querySelector(".color");
 btn.addEventListener("click", ()=>{
     document.body.style.backgroundColor = getRandomHexColor();
     color.textContent = getRandomHexColor();
 }); 
+
 
 
 function getRandomHexColor() {
@@ -12,4 +13,9 @@ function getRandomHexColor() {
       .toString(16)
       .padStart(6, 0)}`;
   } 
-  
+  btn.style.backgroundColor = "#4E75FF"; 
+  btn.style.color = "#fff";
+  btn.style.borderRadius = "8px";
+  btn.style.padding = "8px", "16px";
+  btn.style.width = "148px";
+  btn.style.height = "40px";
