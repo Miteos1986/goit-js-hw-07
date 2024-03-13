@@ -14,6 +14,7 @@ itemList.forEach(element => {
 
 
 const itemSelect = document.querySelectorAll(".item li")
+
 itemSelect.forEach(option => {
     option.style.margin = "8px"
     option.style.border = "1px solid #808080"
