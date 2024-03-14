@@ -11,12 +11,15 @@ let sizes = 30;
 btnCreate.addEventListener("click", createMarcup);
 
  function createMarcup(){
+  const amount = input.value;
 if  (amount < 1 || amount > 100){
   return;
   }
 createBoxes(amount);
 }
+
 btnDestroy.addEventListener("click", destroyMurcap);
+
 function destroyMurcap(){
   box.innerHTML = "";
   input.value = 0;
