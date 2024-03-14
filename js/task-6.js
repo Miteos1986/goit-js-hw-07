@@ -1,7 +1,7 @@
 // 2:29
 const inputEl = document.querySelector("input")
-const btnCreate = document.querySelector("data-create")
-const btnDestroy = document.querySelector("data-destroy")
+const btnCreate = document.querySelector("[data-create]")
+const btnDestroy = document.querySelector("[data-destroy]")
 const box = document.querySelector("#boxes")
 
 let sizes = 30; 
@@ -11,7 +11,7 @@ let sizes = 30;
 btnCreate.addEventListener("click", createMarcup);
 
  function createMarcup(){
-  const amount = input.value;
+  const amount = inputEl.value;
 if  (amount < 1 || amount > 100){
   return;
   }
