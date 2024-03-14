@@ -22,7 +22,7 @@ btnDestroy.addEventListener("click", destroyMurcap);
 
 function destroyMurcap(){
   box.innerHTML = "";
-  amount = 0;
+  inputEl.value = 0;
   sizes = 30;
 }
 
