@@ -31,9 +31,11 @@ btnCreate.addEventListener("click", createMarkup);
 btnDestroy.addEventListener("click", destroyMarkup);
 
  function createMarkup(){
-  destroyMarkup();
+  
   const amount = inputEl.value;
-if  (amount < 1 || amount > 100){
+  destroyMarkup();
+if  (amount < 1 || amount > 100)
+{
   return;
   }
 createBoxes(amount);
@@ -49,7 +51,7 @@ function createBoxes(amount) {
   for (let i = 0; i < amount; i++){
 const myBox = document.createElement("div")
 myBox.style.width = `${sizes}px`;
-myBox.style.height = `${sizes}px`
+myBox.style.height = `${sizes}px`;
 myBox.style.backgroundColor = getRandomHexColor();
 box.append(myBox);
 sizes +=10;
