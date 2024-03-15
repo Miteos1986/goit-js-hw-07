@@ -3,6 +3,25 @@ const inputEl = document.querySelector("input")
 const btnCreate = document.querySelector("[data-create]")
 const btnDestroy = document.querySelector("[data-destroy]")
 const box = document.querySelector("#boxes")
+const boxUP = document.querySelector("#controls")
+
+const div = document.querySelectorAll("div")
+div.forEach(element => {
+  element.classList.add("wrapper")
+});
+inputEl.classList.add("wrapper-input-task6")
+
+btnCreate.style.borderRadius = "8px";
+btnCreate.style.padding = "8px 16px";
+btnCreate.style.width = "120px";
+btnCreate.style.height = "40px";
+btnCreate.style.backgroundColor = "#4E75FF"
+
+btnDestroy.style.borderRadius = "8px";
+btnDestroy.style.padding = "8px 16px";
+btnDestroy.style.width = "120px";
+btnDestroy.style.height = "40px";
+btnDestroy.style.backgroundColor = "#FF4E4E";
 
 let sizes = 30; 
 
@@ -22,8 +41,8 @@ btnDestroy.addEventListener("click", destroyMurcap);
 
 function destroyMurcap(){
   box.innerHTML = "";
-  inputEl.value = 0;
-  sizes = 30;
+  inputEl.value = "";
+ 
 }
 
 
@@ -39,14 +58,10 @@ sizes +=10;
   }
 }
 
-
-
-
-
 function getRandomHexColor() {
     return `#${Math.floor(Math.random() * 16777215)
       .toString(16)
       .padStart(6, 0)}`;
   }
   
-  
+ 
