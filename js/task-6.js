@@ -27,9 +27,11 @@ let sizes = 30;
 
 
 
-btnCreate.addEventListener("click", createMarcup);
+btnCreate.addEventListener("click", createMarkup);
+btnDestroy.addEventListener("click", destroyMarkup);
 
- function createMarcup(){
+ function createMarkup(){
+  destroyMarkup();
   const amount = inputEl.value;
 if  (amount < 1 || amount > 100){
   return;
@@ -37,13 +39,10 @@ if  (amount < 1 || amount > 100){
 createBoxes(amount);
 }
 
-btnDestroy.addEventListener("click", destroyMurcap);
-
-function destroyMurcap(){
+function destroyMarkup(){
   box.innerHTML = "";
   inputEl.value = "";
- 
-}
+ }
 
 
 function createBoxes(amount) {
