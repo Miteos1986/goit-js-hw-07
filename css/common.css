@@ -35,6 +35,53 @@
     width: 100%;
     height: auto;
   }
+
+  /* task-4 */
+
+  .login-form{
+    border-radius: 8px;
+    padding: 24px;
+    width: 408px;
+    height: 256px;
+  }
+.label-task4{
+  width: 360px;
+height: 72px;
+    font-size: 16px;
+   margin-bottom: 8px;
+
+}
+.input-task4{
+  width: 360px;
+height: 40px;
+margin-bottom: 8px;
+}
+.input-task4:last-child{
+  margin-bottom: 16px;
+}
+.btn-task4{
+  border-radius: 8px;
+padding: 8px 16px;
+width: 86px;
+height: 40px;
+background-color: #4e75ff;
+color: #fff;
+}
+/* task 5 */
+
+.widget{
+  border-radius: 8px;
+  border: 1px #212121 solid;
+  
+  padding: 100px 88px;
+  width: 345px;
+  height: 280px;
+}
+.change-color{
+  margin-top: 16px;
+  
+}
+
   /* task-6 */
   .wrapper{
     border-radius: 8px;

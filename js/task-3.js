@@ -10,3 +10,5 @@ if (name === "" ) {return outputEl.textContent = "Anonymous"} else {
 outputEl.textContent = name;}
    
 }
+inputEl.style.width = "360px";
+inputEl.style.height = "40px";

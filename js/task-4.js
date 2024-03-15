@@ -17,8 +17,19 @@ function handleSubmit(event){
 
     event.target.reset();
 }
-form.style.display = "block";
-btn.style.backgroundColor = "#4E75FF"; 
-btn.style.color = "#fff";
-btn.style.borderRadius = "8px";
-btn.style.padding = "8px", "16px";
+const labels = document.querySelectorAll("label");
+labels.forEach(label => {
+    label.classList.add("label-task4")
+});
+const inputs = document.querySelectorAll("input");
+inputs.forEach(input => {
+    input.classList.add("input-task4")
+});
+
+btn.classList.add("btn-task4")
+
+
+// btn.style.backgroundColor = "#4E75FF"; 
+// btn.style.color = "#fff";
+// btn.style.borderRadius = "8px";
+// btn.style.padding = "8px", "16px";
