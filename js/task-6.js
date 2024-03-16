@@ -44,6 +44,7 @@ createBoxes(amount);
 function destroyMarkup(){
   box.innerHTML = "";
   inputEl.value = "";
+  sizes = 30;
  }
 
 
